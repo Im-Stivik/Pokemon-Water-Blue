@@ -14,7 +14,14 @@ public class Move : ScriptableObject
     public LocalizationAsset moveDescription;
     public int priority;
     public bool isMakingContact;
-
+    
+    
+    
+    public static int GetMoveModifier(int moveType, int targetPokemonType)
+    {
+        return 1; //TODO: implement the type chart
+    }
+    
     public enum Category
     {
         Physical,
