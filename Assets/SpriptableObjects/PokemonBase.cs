@@ -8,9 +8,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PokemonBase", menuName = "Pokemon/Base", order = 1)]
 public class PokemonBase : ScriptableObject
 {
-    [SerializeField] private LocalizationAsset pokemonName;
+    //[SerializeField] private LocalizationAsset pokemonName;
     [SerializeField] private int pokedexNumber;
-    [SerializeField] private LocalizationAsset entry;
+    //[SerializeField] private LocalizationAsset entry;
     [SerializeField] private PokemonType type1;
     [SerializeField] private PokemonType type2;
     [SerializeField] private float height;
@@ -51,9 +51,9 @@ public class PokemonBase : ScriptableObject
     [SerializeField] private Sprite shinyBackSprite;
     [SerializeField] private Sprite shinyMenuSprite;
     
-    public LocalizationAsset PokemonName => pokemonName;
+    //public LocalizationAsset PokemonName => pokemonName;
     public int PokedexNumber => pokedexNumber;
-    public LocalizationAsset Entry => entry;
+    //public LocalizationAsset Entry => entry;
     public PokemonType Type1 => type1;
     public PokemonType Type2 => type2;
     public float Height => height;

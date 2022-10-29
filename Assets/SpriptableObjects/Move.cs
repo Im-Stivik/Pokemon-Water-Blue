@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using ConstantAssests;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Move", menuName = "Pokemon/Move", order = 1)]
@@ -13,8 +12,8 @@ public class Move : ScriptableObject
     [SerializeField] private int accuracy;
     [SerializeField] private int pp;
     [SerializeField] private int maxPP;
-    [SerializeField] private LocalizationAsset moveName;
-    [SerializeField] private LocalizationAsset moveDescription;
+    //[SerializeField] private LocalizationAsset moveName;
+    //[SerializeField] private LocalizationAsset moveDescription;
     [SerializeField] private int priority;
     [SerializeField] private bool isMakingContact;
     
@@ -24,8 +23,8 @@ public class Move : ScriptableObject
     public int Accuracy => accuracy;
     public int PP => pp;
     public int MaxPP => maxPP;
-    public LocalizationAsset MoveName => moveName;
-    public LocalizationAsset MoveDescription => moveDescription;
+    //public LocalizationAsset MoveName => moveName;
+    //public LocalizationAsset MoveDescription => moveDescription;
     public int Priority => priority;
     public bool IsMakingContact => isMakingContact;
 
