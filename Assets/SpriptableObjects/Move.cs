@@ -12,8 +12,8 @@ public class Move : ScriptableObject
     [SerializeField] private int accuracy;
     [SerializeField] private int pp;
     [SerializeField] private int maxPP;
-    //[SerializeField] private LocalizationAsset moveName;
-    //[SerializeField] private LocalizationAsset moveDescription;
+    [SerializeField] private LocalizationAsset moveName;
+    [SerializeField] private LocalizationAsset moveDescription;
     [SerializeField] private int priority;
     [SerializeField] private bool isMakingContact;
     

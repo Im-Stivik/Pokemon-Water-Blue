@@ -1,10 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Language
+
+public interface Effect
 {
-    English = 0,
-    Russian = 1,
-    Hebrew = 2
+    public abstract bool Activate();
 }

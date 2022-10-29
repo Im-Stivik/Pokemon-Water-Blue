@@ -19,6 +19,8 @@ public class Pokemon : ScriptableObject
     [SerializeField] private int speed;
     [SerializeField] private int specialAttack;
     [SerializeField] private int specialDefense;
+    [SerializeField] private Ability ability;
+    [SerializeField] private Ability hiddenAbility;
     List<Move> moves;
     
     public PokemonBase PokemonBase => Base;
@@ -80,6 +82,8 @@ public class Pokemon : ScriptableObject
                 break;
         }
     }
+    public Ability Ability => ability;
+    public Ability HiddenAbility => hiddenAbility;
     public List<Move> Moves => moves;
     
     
@@ -114,5 +118,15 @@ public class Pokemon : ScriptableObject
         Sassy,
         Careful,
         Quirky
+    }
+
+    public enum Status
+    {
+        None,
+        Paralyzed,
+        Poisoned,
+        Freeze,
+        Sleep
+        //TODO: make a complete system of status conditions
     }
 }

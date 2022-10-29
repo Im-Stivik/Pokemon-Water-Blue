@@ -5,18 +5,18 @@ using ConstantAssests;
 using Unity.VisualScripting;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PokemonBase", menuName = "Pokemon/Base", order = 1)]
 public class PokemonBase : ScriptableObject
 {
-    //[SerializeField] private LocalizationAsset pokemonName;
+    [SerializeField] private LocalizationAsset pokemonName;
     [SerializeField] private int pokedexNumber;
-    //[SerializeField] private LocalizationAsset entry;
+    [SerializeField] private LocalizationAsset entry;
     [SerializeField] private PokemonType type1;
     [SerializeField] private PokemonType type2;
     [SerializeField] private float height;
     [SerializeField] private float weight;
     
-    //TODO: add abilities
+    [SerializeField] private AbillityName[] abilities;
+    [SerializeField] private AbillityName[] hiddenAbilities;
 
     [SerializeField] private int catchRate;
     [SerializeField] private int baseFriendship;
@@ -58,6 +58,8 @@ public class PokemonBase : ScriptableObject
     public PokemonType Type2 => type2;
     public float Height => height;
     public float Weight => weight;
+    public AbillityName[] Abilities => abilities;
+    public AbillityName[] HiddenAbilities => hiddenAbilities;
     public int CatchRate => catchRate;
     public int BaseFriendship => baseFriendship;
     public int BaseExp => baseExp;
